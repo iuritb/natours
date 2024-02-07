@@ -33,6 +33,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: 700;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -52,9 +61,9 @@
   }
 }
 
-.btn-text{
+.btn-text {
   &:link,
-  &:visited{
+  &:visited {
     font-size: $default-font-size;
     color: $color-primary;
     display: inline-block;
@@ -63,15 +72,15 @@
     padding: 3px;
   }
 
-  &:hover{
+  &:hover {
     background-color: $color-primary;
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     transform: translateY(-2px);
   }
 
-  &:active{
-    box-shadow: 0 .5rem 2rem rgba($color-black, 0.15);
+  &:active {
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.15);
     transform: translateY(0);
   }
 }
